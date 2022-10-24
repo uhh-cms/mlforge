@@ -18,4 +18,10 @@ config = DotDict.wrap({
         "hh_ggf_kl1_kt1",
         "tth_bb",
     ],
+
+    "files": {},  # filled below
 })
+
+
+# read data dir and store relative file names per dataset
+config.files["tth_bb"] = ["a", "b", "c"]

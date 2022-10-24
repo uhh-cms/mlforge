@@ -72,6 +72,9 @@ class DatasetTask(ConfigTask):
 
     dataset = luigi.Parameter(default="hh_ggf_kl1_kt1")
 
+    def create_branch_map(self):
+        pass
+
     def store_parts(self):
         parts = super().store_parts()
 
